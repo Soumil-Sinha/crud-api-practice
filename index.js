@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 });
 
 
-mongoose.connect('mongodb+srv://soumil_sinha:<atlaspassword>@backenddb.ifhwyrq.mongodb.net/?appName=BackendDB').then(()=>{
+mongoose.connect('mongodb+srv://soumil_sinha:<db_password>@backenddb.ifhwyrq.mongodb.net/?appName=BackendDB').then(()=>{
         console.log("Connected to MongoDb successfully");
         app.listen(3000, () => {
         console.log('Server is running on port 3000');
